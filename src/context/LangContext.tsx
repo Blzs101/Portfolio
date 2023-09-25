@@ -9,21 +9,21 @@ type Context = {
     setLanguage: React.Dispatch<React.SetStateAction<Language>>;
 }
 
-export const appContext = createContext<Context | null>(null);
+export const langContext = createContext<Context | null>(null);
 
 
-export default function AppContextProvider({ children }: { children: React.ReactNode }) {
+export default function LangContextProvider({ children }: { children: React.ReactNode }) {
     const [language, setLanguage] = useState<Language>("EN");
 
     return (
-        <appContext.Provider value={{ language, setLanguage }}>
+        <langContext.Provider value={{ language, setLanguage }}>
             {children}
-        </appContext.Provider>
+        </langContext.Provider>
     )
 }
 
-export function useAppContext() {
-    const context = useContext(appContext);
+export function useLangContext() {
+    const context = useContext(langContext);
     if (!context) {
         throw new Error("useAppContext must be used within a AppContextProvider")
     }

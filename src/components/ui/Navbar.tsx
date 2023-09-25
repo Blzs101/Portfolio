@@ -1,13 +1,13 @@
 "use client"
 
-import { useAppContext } from "@/context/AppContext"
+import { useLangContext } from "@/context/LangContext"
 import Image from "next/image"
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTheme } from 'next-themes'
 
 export default function Navbar() {
-    const { language, setLanguage } = useAppContext();
+    const { language, setLanguage } = useLangContext();
     const [navBar, setNavbar] = useState(false);
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
