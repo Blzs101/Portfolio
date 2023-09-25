@@ -2,7 +2,7 @@
 import { ThemeProvider } from 'next-themes'
 export default function ThemeContext({ children }: { children: React.ReactNode }) {
     return (
-        <ThemeProvider themes={["dark", "light"]} enableSystem={false}>
+        <ThemeProvider themes={["dark", "light"]} enableSystem={false} attribute="class">
             {children}
         </ThemeProvider>
     )

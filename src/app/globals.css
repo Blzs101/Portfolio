@@ -4,17 +4,4 @@
 
 :root {
   -webkit-tap-highlight-color: transparent;
-  background-color: white;
-  color: black;
-}
-:root:focus{
-  border-color:black;
-}
-
-[data-theme='dark'] {
-  background-color: #23272f;
-  color: white;
-}
-[data-theme='dark']:focus{
-  border-color: white;
 }

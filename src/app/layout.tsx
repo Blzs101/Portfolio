@@ -19,7 +19,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className='fixed inset-0 w-full h-full p-3 overflow-auto md:p-6'>
+      <body className='fixed inset-0 w-full h-full p-3 overflow-auto md:p-6 bg-white text-black hover-black dark:bg-[#23272f] dark:text-white dark:hover:white'>
         <NextTopLoader showSpinner={false} color="rgba(71,85,105)" />
         <ThemeContext>
           <LangContextProvider>
