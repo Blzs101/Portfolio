@@ -1,0 +1,27 @@
+[
+    {
+      "img": "/html.svg"
+    },
+    {
+      "img": "/css.svg"
+    },
+    {
+      "img": "/javascript.svg"
+    },
+    {
+      "img": "/react.svg"
+    },
+    {
+      "img": "/tailwind.svg"
+    },
+    {
+      "img": "/typescript.svg"
+    },
+    {
+      "img": "/bootstrap.svg"
+    },
+    {
+      "img": "/nextjs.svg"
+    }
+  ]
+  
