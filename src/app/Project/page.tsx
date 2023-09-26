@@ -7,7 +7,7 @@ type PropsType = {
     title: string,
     tech: string
 }
-export default function ProjectPage() {
+export default async function ProjectPage() {
 
     return (
         <main className="flex flex-col w-auto h-auto gap-8 pb-8 lg:gap-10 lg:grid-cols-3 lg:grid lg:p-4">
