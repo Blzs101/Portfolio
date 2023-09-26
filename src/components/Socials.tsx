@@ -1,16 +1,14 @@
-"use client"
-import { useLangContext } from "@/context/LangContext";
+
 import Link from "next/link";
 import Image from "next/image"
 
 export default function Socials() {
-    const { language } = useLangContext();;
 
     return (
         <section className="flex flex-col items-center gap-4">
-            <h2 className="text-lg font-bold">{language === "EN" ? "Email me:" : "Küljd emailt:"}</h2>
+            <h2 className="text-lg font-bold">Email me:</h2>
             <a href="mailto:kinc.kb@gmail.com" className="underline">kinc.kb@gmail.com</a>
-            <h2 className="text-lg font-bold">{language === "EN" ? "Connect with me:" : "Csatlakozz hozzám:"}</h2>
+            <h2 className="text-lg font-bold">Connect with me:</h2>
             <div className="flex gap-4">
                 <Link href="https://github.com/Blzs101" className="rounded-full md:p-2 hover:bg-slate-600 hover:bg-opacity-30 hidden dark:block" ><Image src="/github-light.svg" alt="github logo" width={32} height={32}></Image></Link>
                 <Link href="https://github.com/Blzs101" className="rounded-full md:p-2 hover:bg-slate-600 hover:bg-opacity-30 block dark:hidden" ><Image src="/github-dark.svg" alt="github logo" width={32} height={32}></Image></Link>
