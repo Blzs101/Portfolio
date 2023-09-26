@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useContext, createContext, useState, useEffect } from "react";
 
 type Language = "EN" | "HUN";
@@ -15,6 +15,11 @@ export const langContext = createContext<Context | null>(null);
 export default function LangContextProvider({ children }: { children: React.ReactNode }) {
     const [language, setLanguage] = useState<Language>("EN");
 
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.localStorage) {
+            setLanguage(JSON.parse(window.localStorage.getItem("lang") || ' "EN" '));
+        }
+    }, [])
     return (
         <langContext.Provider value={{ language, setLanguage }}>
             {children}

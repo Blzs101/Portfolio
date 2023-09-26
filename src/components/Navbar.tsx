@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTheme } from 'next-themes'
 
+
 export default function Navbar() {
     const { language, setLanguage } = useLangContext();
     const [navBar, setNavbar] = useState(false);
@@ -16,6 +17,7 @@ export default function Navbar() {
     }
     const changeLangugae = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setLanguage(e.target.value as "EN" | "HUN");
+        localStorage.setItem("lang", JSON.stringify(e.target.value));
     }
 
     const navBarOff = () => {
