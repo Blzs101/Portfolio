@@ -9,7 +9,7 @@ export default function InfoPage() {
         <main className="flex flex-col overflow-auto">
             <section className="grid items-center justify-center h-full gap-4 py-16 mx-auto lg:grid-cols-2">
                 <div className="relative w-full  md:w-4/5 aspect-video mx-auto">
-                    <Image src="/front-end-developer.jpg" alt="" fill className="rounded-md object-cover " />
+                    <Image src="/front-end-developer.webp" alt="" fill className="rounded-md object-cover " />
                 </div>
                 <About />
             </section>
