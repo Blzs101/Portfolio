@@ -22,10 +22,10 @@ export default function Navbar() {
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} darkmode.svg`} alt="" width={40} height={40} className="block dark:hidden" />
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} lightmode.svg`} alt="" width={40} height={40} className="hidden dark:block" />
             </button>
-            <a href="/" className="mr-auto md:mr-0">
+            <Link href="/" className="mr-auto md:mr-0">
                 <div className="mb-[-4px] text-base ">Kinczel Balázs</div>
                 <div className="text-base">Front-End Developer</div>
-            </a>
+            </Link>
 
             <nav className={`w-auto h-auto ml-auto ${!navBar ? "hidden" : "block"} md:block mt-4 md:mt-0`}>
                 <ul className={` gap-2 left-0 items-center justify-center  h-auto py-4 t list-none w-full text-lg absolute md:relative flex-col md:flex-row  flex mt-0 bg-white dark:bg-[#23272f] z-50 top-[74px] md:top-0`}>
