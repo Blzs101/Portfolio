@@ -1,0 +1,39 @@
+[
+    {
+      "link": "",
+      "image": "",
+      "title": "",
+      "tech": ""
+    },
+    {
+      "link": "",
+      "image": "",
+      "title": "",
+      "tech": ""
+    },
+    {
+      "link": "https://blzs101.github.io/Countries/",
+      "image": "/Countries.png",
+      "title": "Countries",
+      "tech": "HTML CSS TS API REACT"
+    },
+    {
+      "link": "https://Blzs101.github.io/Dictionary-App/",
+      "image": "/Dictionary-App.jpeg",
+      "title": "Dictionary-App",
+      "tech": "HTML CSS JS API REACT"
+    },
+    {
+      "link": "https://blzs101.github.io/Advice-Generator/",
+      "image": "/Advice-Generator.png",
+      "title": "Advice-Generator",
+      "tech": "HTML CSS JS API REACT"
+    },
+    {
+      "link": "https://blzs101.github.io/Age-Calculator-App/",
+      "image": "/Calculator-App.jpeg",
+      "title": "Age-Calculator-App",
+      "tech": "HTML CSS JS API REACT"
+    }
+  ]
+  
