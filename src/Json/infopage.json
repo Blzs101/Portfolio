@@ -1,27 +1,31 @@
 [
     {
-      "img": "/html.svg"
+      "img": "/html.svg",
+      "alt": "html icon"
     },
     {
-      "img": "/css.svg"
+      "img": "/css.svg",
+      "alt": "css icon"
     },
     {
-      "img": "/javascript.svg"
+      "img": "/javascript.svg",
+      "alt": "javascript icon"
     },
     {
-      "img": "/react.svg"
+      "img": "/react.svg",
+      "alt": "react icon"
     },
     {
-      "img": "/tailwind.svg"
+      "img": "/tailwind.svg",
+      "alt": "tailwind icon"
     },
     {
-      "img": "/typescript.svg"
+      "img": "/typescript.svg",
+      "alt": "typescript icon"
     },
     {
-      "img": "/bootstrap.svg"
-    },
-    {
-      "img": "/nextjs.svg"
+      "img": "/nextjs.svg",
+      "alt": "nextjs icon"
     }
   ]
   

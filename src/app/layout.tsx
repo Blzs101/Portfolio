@@ -19,8 +19,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className='inset-0 w-full h-full p-3 overflow-auto md:p-6 bg-white text-black hover-black dark:bg-[#23272f] dark:text-white dark:hover:white'>
-        <NextTopLoader showSpinner={false} color="rgba(71,85,105)" />
+      <body className='inset-0 w-full h-full p-3 overflow-auto md:p-6 bg-white text-black hover:border:black dark:bg-[#23272f] dark:text-white dark:hover:white'>
+        <NextTopLoader showSpinner={false} color="rgb(71,85,105)" />
         <ThemeContext>
           <LangContextProvider>
             <Navbar />

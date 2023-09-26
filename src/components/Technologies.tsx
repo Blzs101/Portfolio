@@ -1,13 +1,16 @@
+import Image from "next/image"
 type PropsType = {
-    img: string
+    img: string,
+    alt: string
 }
-function Technologies({ img }: PropsType) {
+export default function Technologies({ img, alt }: PropsType) {
 
     return (
         <div className="flex items-center justify-center py-2">
-            <img src={img} className="pr-4"></img>
+            <Image src={img} className="pr-4" alt={alt} width={64} height={64} loading="lazy" />
         </div>
     )
 }
 
-export default Technologies
+
+
