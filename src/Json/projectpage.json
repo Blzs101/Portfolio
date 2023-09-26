@@ -6,10 +6,10 @@
       "tech": ""
     },
     {
-      "link": "",
-      "image": "",
-      "title": "",
-      "tech": ""
+      "link": "https://kinczel-balazs.vercel.app/",
+      "image": "/Kinczel Balázs's Portfolio.png",
+      "title": "Portfolio",
+      "tech": "HTML CSS TS NEXTJS"
     },
     {
       "link": "https://blzs101.github.io/Countries/",
