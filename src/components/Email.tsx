@@ -22,15 +22,24 @@ export default function Email() {
 
     const submitForm: SubmitHandler<formType> = async (data) => {
         setLoading(true)
-        await emailjs.send("service_bu50pze", "template_hchxibk", {
-            from_name: data.name,
-            from_email: data.email,
-            message: data.message
-        }, "jRopw-oAINAr_I1Ei").then(() => {
+        try {
+            await emailjs.send("service_bu50pze", "template_hchxibk", {
+                from_name: data.name,
+                from_email: data.email,
+                message: data.message
+            }, "jRopw-oAINAr_I1Ei").then(() => {
+
+                alert("Email sent successfully. I'll get back to you as soon as possible!");
+            })
+        }
+        catch (err) {
+            console.error(err);
+            alert("Something went wrong while sending the email");
+        }
+        finally {
             setLoading(false);
             reset();
         }
-        )
     }
     return (
         <section>
