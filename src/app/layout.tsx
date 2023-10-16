@@ -8,6 +8,22 @@ import ThemeContext from '@/context/ThemeContext'
 export const metadata: Metadata = {
   title: "Kinczel Balázs's Portfolio ",
   description: 'Kinczel Balázs Portfolio Website',
+  icons: {
+    icon: "/favicon.ico"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://kinczel-balazs.vercel.app/",
+    title: "Kinczel Balázs's Portfolio ",
+    description: 'Kinczel Balázs Portfolio Website',
+    images: "/favicon.ico"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kinczel Balázs's Portfolio ",
+    description: 'Kinczel Balázs Portfolio Website',
+    images: "/favicon.ico"
+  }
 }
 
 export default function RootLayout({
