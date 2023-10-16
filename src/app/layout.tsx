@@ -11,20 +11,20 @@ export const metadata: Metadata = {
     google: "9kNaExtuqEV0n7U07-8JZJUjHTimcIjj4X_T9TAYMZo"
   },
   icons: {
-    icon: "/favicon.ico"
+    icon: "/my-logo.ico"
   },
   openGraph: {
     type: "website",
     url: "https://kinczel-balazs.vercel.app/",
     title: "Kinczel Balázs's Portfolio ",
     description: 'Kinczel Balázs Portfolio Website',
-    images: "/favicon.ico"
+    images: "/my-logo.ico"
   },
   twitter: {
     card: "summary_large_image",
     title: "Kinczel Balázs's Portfolio ",
     description: 'Kinczel Balázs Portfolio Website',
-    images: "/favicon.ico"
+    images: "/my-logo.ico"
   }
 }
 

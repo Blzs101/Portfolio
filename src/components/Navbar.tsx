@@ -22,9 +22,12 @@ export default function Navbar() {
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} darkmode.svg`} alt="hamburger bar" width={40} height={40} className="block dark:hidden" />
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} lightmode.svg`} alt="hamburger bar" width={40} height={40} className="hidden dark:block" />
             </button>
-            <Link href="/" className="mr-auto md:mr-0">
-                <div className="mb-[-4px] text-base ">Kinczel Balázs</div>
-                <div className="text-base">Front-End Developer</div>
+            <Link href="/" className="mr-auto md:mr-0 flex">
+                <Image src={"/my-logo.png"} width={40} height={40} alt="my logo" className="rounded-full h-[40px] my-auto" />
+                <div className="ml-2">
+                    <div className="mb-[-4px] text-base ">Kinczel Balázs</div>
+                    <div className="text-base">Front-End Developer</div>
+                </div>
             </Link>
 
             <nav className={`w-auto h-auto ml-auto ${!navBar ? "hidden" : "block"} md:block mt-4 md:mt-0`}>
