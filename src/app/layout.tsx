@@ -4,10 +4,12 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import ThemeContext from '@/context/ThemeContext'
 
-
 export const metadata: Metadata = {
   title: "Kinczel Balázs's Portfolio ",
   description: 'Kinczel Balázs Portfolio Website',
+  verification: {
+    google: "9kNaExtuqEV0n7U07-8JZJUjHTimcIjj4X_T9TAYMZo"
+  },
   icons: {
     icon: "/favicon.ico"
   },
