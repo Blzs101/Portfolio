@@ -10,7 +10,7 @@ type PropsType = {
 export default async function ProjectPage() {
 
     return (
-        <main className="flex flex-col w-auto h-auto gap-8 pb-8 lg:gap-10 lg:grid-cols-3 md:grid lg:p-4 md:grid-cols-2">
+        <main className="flex flex-col w-auto h-auto gap-8 pb-8 lg:gap-10 lg:grid-cols-3 sm:grid lg:p-4 sm:grid-cols-2 sm:gap-5">
             {project.map(({ link, image, title, tech }: PropsType) => {
                 return <Project {...{ link: link, image: image, title: title, tech: tech }} key={title} />
             })}
