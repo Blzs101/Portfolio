@@ -10,9 +10,7 @@ export const metadata: Metadata = {
   verification: {
     google: "9kNaExtuqEV0n7U07-8JZJUjHTimcIjj4X_T9TAYMZo"
   },
-  icons: {
-    icon: "/my-logo.png"
-  },
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
   metadataBase: new URL('https://kinczel-balazs.vercel.app/'),
   alternates: {
     canonical: '/',
@@ -25,13 +23,13 @@ export const metadata: Metadata = {
     url: "https://kinczel-balazs.vercel.app/",
     title: "Kinczel Balázs's Portfolio ",
     description: 'Kinczel Balázs Portfolio Website',
-    images: "/my-logo.png"
+    images: { url: "/my-logo.png" }
   },
   twitter: {
     card: "summary_large_image",
     title: "Kinczel Balázs's Portfolio ",
     description: 'Kinczel Balázs Portfolio Website',
-    images: "/my-logo.png"
+    images: { url: "/my-logo.png" }
   }
 }
 
