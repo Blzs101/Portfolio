@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     url: "https://kinczel-balazs.vercel.app/",
     title: "Kinczel Balázs's Portfolio ",
     description: 'Kinczel Balázs Portfolio Website',
-    images: { url: "/my-logo.png" }
+    images: { url: "/Kinczel Balázs's Portfolio.png" }
   },
   twitter: {
     card: "summary_large_image",
     title: "Kinczel Balázs's Portfolio ",
     description: 'Kinczel Balázs Portfolio Website',
-    images: { url: "/my-logo.png" }
+    images: { url: "/Kinczel Balázs's Portfolio.png" }
   }
 }
 
