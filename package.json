@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@hookform/resolvers": "^3.3.1",
+    "geist": "^1.1.0",
     "next": "latest",
     "next-themes": "^0.2.1",
     "nextjs-toploader": "^1.4.2",
