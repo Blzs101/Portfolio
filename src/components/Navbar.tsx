@@ -22,7 +22,7 @@ export default function Navbar() {
     useOnClickOutside(navRef, () => setNavbar(false))
     
     return (
-        <header className="flex h-[50px] w-full items-center md:mt-4 text-base mb-6 md:mb-12 mt-0" ref={navRef}>
+        <header className="flex h-[50px] w-full items-center md:mt-4 text-base mb-6 md:mb-12 mt-0" ref={navRef} >
             <button className="block  mr-2 md:hidden" onClick={() => setNavbar(!navBar)}>
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} darkmode.svg`} alt="hamburger bar" width={40} height={40} className="block dark:hidden" />
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} lightmode.svg`} alt="hamburger bar" width={40} height={40} className="hidden dark:block" />
@@ -35,8 +35,8 @@ export default function Navbar() {
                 </div>
             </Link>
 
-            <nav className={`w-auto h-auto ml-auto ${!navBar ? "hidden" : "block"} md:block mt-4 md:mt-0`}>
-                <ul className={` gap-2 left-0 items-center justify-center  h-auto py-4 t list-none w-full text-lg absolute md:relative flex-col md:flex-row  flex mt-0 bg-white dark:bg-[#23272f] z-50 top-[74px] md:top-0`}>
+            <nav className={`w-auto h-auto ${!navBar ? "hidden" : "block"} md:block mt-4 md:mt-0`}>
+                <ul className={`gap-2 left-0 items-center justify-center  h-auto py-4 list-none w-full text-lg absolute md:relative flex-col md:flex-row  flex bg-white/30 dark:bg-[#23272f]/30 backdrop-blur-md z-50 top-[74px] md:top-0 `}>
                     <Link href="/" className="w-full p-2 px-4 py-2 cursor-pointer active:bg-slate-600 active:bg-opacity-30 md:hover:bg-slate-600 md:hover:rounded-full md:hover:bg-opacity-30" onClick={navBarOff}>Home</Link>
                     <Link href="/Info" className="w-full p-2 px-4 py-2 cursor-pointer active:bg-slate-600 active:bg-opacity-30 md:hover:bg-slate-600 md:hover:rounded-full md:hover:bg-opacity-30" onClick={navBarOff}>Info</Link>
                     <Link href="/Project" className="w-full p-2 px-4 py-2 cursor-pointer active:bg-slate-600 active:bg-opacity-30 md:hover:bg-slate-600 md:hover:rounded-full md:hover:bg-opacity-30" onClick={navBarOff}>Projects</Link>
