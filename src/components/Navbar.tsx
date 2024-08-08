@@ -1,8 +1,9 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useTheme } from 'next-themes'
+import { useOnClickOutside } from "@/hooks/use-on-click-outside";
 
 export default function Navbar() {
     const [navBar, setNavbar] = useState(false);
@@ -16,9 +17,13 @@ export default function Navbar() {
         setNavbar(false);
     }
 
+    const navRef = useRef<HTMLDivElement | null>(null)
+
+    useOnClickOutside(navRef, () => setNavbar(false))
+    
     return (
-        <header className="flex h-[50px] w-full items-center md:mt-4 text-base mb-6 md:mb-12 mt-0">
-            <button className="block  mr-2 md:hidden" onClick={() => setNavbar(!navBar)} onBlur={() => setTimeout(() => setNavbar(false), 100)}>
+        <header className="flex h-[50px] w-full items-center md:mt-4 text-base mb-6 md:mb-12 mt-0" ref={navRef}>
+            <button className="block  mr-2 md:hidden" onClick={() => setNavbar(!navBar)}>
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} darkmode.svg`} alt="hamburger bar" width={40} height={40} className="block dark:hidden" />
                 <Image src={`/${!navBar ? "burger-menu" : "cross"} lightmode.svg`} alt="hamburger bar" width={40} height={40} className="hidden dark:block" />
             </button>
