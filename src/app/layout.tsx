@@ -8,6 +8,7 @@ import { GeistSans } from 'geist/font/sans'
 export const metadata: Metadata = {
   title: "Kinczel Balázs's Portfolio ",
   description: 'Kinczel Balázs Portfolio Website',
+  robots:"noindex",
   verification: {
     google: "9kNaExtuqEV0n7U07-8JZJUjHTimcIjj4X_T9TAYMZo"
   },
