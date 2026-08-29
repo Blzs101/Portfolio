@@ -44,7 +44,7 @@ export default function Navbar() {
                 </ul>
             </nav>
 
-            <button className="flex items-center justify-center p-2 ml-1 rounded-full sm:ml-2 w-autoh-full sm:p-3 sm:hover:bg-slate-600 sm:hover:bg-opacity-30" onClick={changeTheme}>
+            <button className="flex items-center justify-center p-2 ml-1 rounded-full sm:ml-2 w-autoh-full sm:p-3 sm:hover:bg-slate-600 sm:hover:bg-opacity-30 cursor-pointer" onClick={changeTheme}>
                 <Image src={"/sun-2-svgrepo-com.svg"} alt="change mode" width={30} height={30} className="hidden dark:block"></Image>
                 <Image src={"/moon-svgrepo-com.svg"} alt="change mode" width={30} height={30} className="black dark:hidden"></Image>
             </button>
